@@ -4,7 +4,7 @@ End-to-end fraud detection pipeline with threshold optimization and business cos
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 Fraud detection is a classic example of an imbalanced classification problem, where fraudulent transactions represent a very small fraction of total activity.
 
@@ -18,15 +18,15 @@ This project demonstrates how to:
 
 ---
 
-## ⚙️ Methodology
+## Methodology
 
-### 1️⃣ Exploratory Data Analysis (EDA)
+### 1. Exploratory Data Analysis (EDA)
 
 - Verified extreme class imbalance (~0.17% fraud)
 - Analyzed transaction amount distribution
 - Applied log transformation to reduce skewness
 
-### 2️⃣ Baseline Model
+### 2. Baseline Model
 
 - Logistic Regression classifier
 - Train-test split with stratification
@@ -39,7 +39,7 @@ Accuracy was avoided due to class imbalance.
 
 ---
 
-### 3️⃣ Feature Scaling
+### 3. Feature Scaling
 
 - Applied `StandardScaler`
 - Observed impact on Precision-Recall trade-off
@@ -47,7 +47,7 @@ Accuracy was avoided due to class imbalance.
 
 ---
 
-### 4️⃣ Threshold Optimization
+### 4. Threshold Optimization
 
 The default threshold (0.5) is not optimal in highly imbalanced datasets.
 
@@ -57,7 +57,7 @@ The default threshold (0.5) is not optimal in highly imbalanced datasets.
 
 ---
 
-### 5️⃣ Business Cost Optimization
+### 5. Business Cost Optimization
 
 To simulate a realistic fraud detection setting:
 
@@ -73,7 +73,7 @@ A grid search over thresholds identified an optimal decision threshold that sign
 
 ---
 
-### 6️⃣ Precision-Recall Evaluation
+### 6. Precision-Recall Evaluation
 
 - Computed PR curve
 - PR-AUC ≈ 0.73
@@ -83,7 +83,7 @@ PR-AUC is more informative than ROC-AUC in rare-event detection problems.
 
 ---
 
-## 🎯 Key Insights
+##  Key Insights
 
 - Accuracy is misleading in highly imbalanced datasets.
 - Default probability thresholds are rarely optimal.
@@ -93,7 +93,7 @@ PR-AUC is more informative than ROC-AUC in rare-event detection problems.
 
 ---
 
-## 🚀 Production Considerations
+##  Production Considerations
 
 In a real-world deployment:
 
@@ -104,7 +104,7 @@ In a real-world deployment:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - Python
 - Pandas
@@ -114,12 +114,12 @@ In a real-world deployment:
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 Kaggle Credit Card Fraud Detection dataset.
 
 ---
 
-## 👤 Author
+##  Author
 
 Bulat Makhmutov  
